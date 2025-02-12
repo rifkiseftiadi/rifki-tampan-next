@@ -1,3 +1,6 @@
+/* eslint-disable jsx-a11y/alt-text */
+import Image from "next/image";
+import path from "@/../public/image/profile.jpg"
 const Home = () => {
   return (
     <div className="container">
@@ -20,14 +23,10 @@ const Home = () => {
           <h2>About Me</h2>
           <div className="about-content">
             <div className="about-img">
-              <img
-                src="/image/profile.jpg"
-                alt="Profile Picture"
-                className="profile-img"
-              />
+              <Image src={path} alt="Profile" className="profile-img" />
             </div>
             <div className="profile-info">
-              <h3>[Rifki Seftiadi]</h3>
+              <h3>Rifki Seftiadi</h3>
               <p><strong>Mahasiswa Nyalse</strong></p>
               <p>
                 I am a passionate web developer with a strong interest in
@@ -97,7 +96,7 @@ const Home = () => {
         {/* Contact Section */}
         <section id="contact" className="section contact">
           <h2>Contact</h2>
-          <p>If you'd like to get in touch with me, feel free to reach out!</p>
+          <p>If you&apos;d like to get in touch with me, feel free to reach out!</p>
           <form className="contact-form">
             <label htmlFor="name">Name:</label>
             <input type="text" id="name" name="name" required />
